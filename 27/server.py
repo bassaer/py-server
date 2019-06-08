@@ -15,7 +15,7 @@ def main():
     host = gethostbyname(gethostname())
     port = 8000
     httpd = HTTPServer(('', port), Handler)
-    print('serving ==> {0}:{1}'.format(host, port))
+    print('serving ==> {}:{}'.format(host, port))
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
